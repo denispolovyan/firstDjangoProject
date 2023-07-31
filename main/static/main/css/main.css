@@ -14,7 +14,8 @@ main{
 /* container  */
 
 .container {
-	max-width: 1000px;
+	max-width: 1030px;
+	padding: 0px 15px;
 	margin: 0px auto;
 }
 

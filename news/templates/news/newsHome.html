@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %} {% block title %} website news {% endblock %}
+{% load static %} {% block body %}
+<div class="container">
+  {%if news%}
+  <div class="news">
+    {%for el in news%}
+    <div class="news__body">
+      <div class="news__title">{{el.title}}</div>
+      <div class="news__announcement">{{el.announcement}}</div>
+      <div class="news__text">{{el.fullText}}</div>
+      <div class="news__date">{{el.date}}</div>
+    </div>
+    {%endfor%}
+  </div>
+  {%else%}
+  <div class="news__error">You do not have records</div>
+  {%endif%}
+</div>
+{% endblock %}

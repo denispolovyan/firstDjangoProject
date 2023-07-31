@@ -1,0 +1,29 @@
+.news {
+	font-family: 'Manrope', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 40px 0px;
+	gap: 40px;
+	justify-content: space-between;
+}
+.news__body {
+	flex: 0 1 45.5%;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 40px;
+	border: 1px solid #000;
+}
+.news__title {
+	font-size: 36px;
+	font-weight: 700;
+}
+.news__announcement {
+}
+.news__text {
+}
+.news__date {
+}
+.news__error {
+}
