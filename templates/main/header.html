@@ -1,0 +1,13 @@
+{% load static %}
+<div class="header">
+  <div class="container">
+    <div class="header__body">
+      <div class="logo"> <a href="{% url 'home'%}"><img class="header__img" src="{%static 'main/img/logo.png'%}" alt="logo"></a></div>
+      <div class="header__list">
+		  <div class="header__item"><a href="{%url 'about'%}">about us</a></div>
+		  <div class="header__item"><a href="{%url 'shop'%}">watch shop</a></div>
+		  <div class="header__item"><a href="{%url 'track'%}">track number</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
