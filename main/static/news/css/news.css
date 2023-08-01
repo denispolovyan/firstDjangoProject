@@ -1,3 +1,5 @@
+/* main news page  */
+
 .news {
 	font-family: 'Manrope', sans-serif;
 	display: flex;
@@ -26,4 +28,72 @@
 .news__date {
 }
 .news__error {
+}
+
+.create {
+	margin: 40px 0px;
+	font-family: 'Manrope', sans-serif;
+	font-size: 20px;
+	padding: 10px 40px;
+	border: 1px solid #000;
+	font-weight: 700;
+}
+.create a{
+	color: #000
+}
+/* form for adding news  */
+.form {
+	font-family: 'Manrope', sans-serif;
+	border: 1px solid grey;
+	max-width: 500px;
+	margin: 40px auto;
+
+}
+.form__body {
+	max-width: 250px;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+}
+.form__name{
+	font-size: 20px;
+	font-weight: 700;
+}
+.form__title {
+}
+.form__announcement {
+}
+.form__text {
+}
+.form__time {
+	display: flex;
+	flex-direction: column;
+	gap: 20px
+}
+.form__input{
+	max-width: 250px;
+	height: 30px;
+	border: 1px solid rgb(167, 167, 167);
+	border-radius: 5px;
+	background-color: #e6e6e6;
+	padding: 0px 10px;
+	font-size: 20px;
+}
+.form__textarea{
+	max-width: 250px;
+	min-width: 250px;
+	max-height: 200px;
+	min-height: 200px;
+}
+.form__buttons {
+	display: flex;
+	justify-content: space-between;
+
+}
+.form__button {
+	font-size: 16px;
+	padding: 10px 30px;
+	background: #e6e6e6;
 }

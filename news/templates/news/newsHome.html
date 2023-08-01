@@ -1,6 +1,7 @@
 {% extends 'main/layout.html' %} {% block title %} website news {% endblock %}
 {% load static %} {% block body %}
 <div class="container">
+	<div class="create"><a href="{%url 'newsCreate'%}">Create news</a></div>
   {%if news%}
   <div class="news">
     {%for el in news%}
