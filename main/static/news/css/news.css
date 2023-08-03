@@ -22,12 +22,29 @@
 	font-weight: 700;
 }
 .news__announcement {
+	font-weight: 500;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+
 }
 .news__text {
+	flex: 1 1 auto;
+	display: flex;
+	line-height: 20px;
+	max-height: 140px;
+	overflow: auto;
 }
 .news__date {
+	border-top: 1px solid #000;
+	padding-top: 10px;
+	font-weight: 500;
 }
 .news__error {
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+	margin-top: 40px;
 }
 
 .create {
@@ -35,13 +52,21 @@
 	font-family: 'Manrope', sans-serif;
 	font-size: 20px;
 	padding: 10px 40px;
-	border: 1px solid #000;
 	font-weight: 700;
+	text-align: center;
+	background: rgb(216, 172, 172);
+}
+.create:hover {
+	background: rgb(189, 147, 147);
+	transition-duration: 0.5s;
 }
 .create a{
-	color: #000
+	font-weight: 700;
+	color: #fff;
 }
+
 /* form for adding news  */
+
 .form {
 	font-family: 'Manrope', sans-serif;
 	border: 1px solid grey;
@@ -96,4 +121,64 @@
 	font-size: 16px;
 	padding: 10px 30px;
 	background: #e6e6e6;
+}
+
+/* button  */
+.news__button {
+}
+.button {
+	width: 140px;
+	height: 35px;
+	border-radius: 10px;
+	background: rgb(216, 172, 172);
+}
+.button:hover{
+	background: rgb(189, 147, 147);
+	transition-duration: 0.5s;
+}
+.button a{
+	color: #fff;
+	font-weight: 700;
+}
+
+/* details  */
+.details {
+	margin: 40px 0px;
+	font-family: 'Manrope', sans-serif;
+}
+.details__body{
+	max-width: 500px;
+	margin: 0px auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+}
+.details__title {
+	font-size: 36px;
+	font-weight: 700;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+.details__date {
+	font-size: 16px;
+	font-weight: 500;
+}
+.fullText {
+	line-height: 20px;
+	font-size: 16px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+.details__buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+/* delete  */
+
+.delete__button{
+	width: 100%;
 }

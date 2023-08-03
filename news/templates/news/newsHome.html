@@ -1,7 +1,10 @@
 {% extends 'main/layout.html' %} {% block title %} website news {% endblock %}
 {% load static %} {% block body %}
 <div class="container">
-	<div class="create"><a href="{%url 'newsCreate'%}">Create news</a></div>
+  {%if not news%}
+  <div class="news__error">You do not have news</div>
+  {%endif%}
+  <div class="create"><a href="{%url 'newsCreate'%}">Create news</a></div>
   {%if news%}
   <div class="news">
     {%for el in news%}
@@ -10,11 +13,12 @@
       <div class="news__announcement">{{el.announcement}}</div>
       <div class="news__text">{{el.fullText}}</div>
       <div class="news__date">{{el.date}}</div>
+      <button class="news__button button">
+        <a href="{% url 'newsDetail' el.id%}">Read more</a>
+      </button>
     </div>
     {%endfor%}
   </div>
-  {%else%}
-  <div class="news__error">You do not have records</div>
   {%endif%}
 </div>
 {% endblock %}

@@ -3,21 +3,18 @@
 <div class="container">
   <div class="form">
     <form class="form__body" method="post">
-		<div class="form__name">Add new record</div>
-		{%csrf_token%}
-		{{form.title}}
-		{{form.announcement}}
-		{{form.fullText}}
-		{{form.date}}
-		<div class="form__buttons">
-			<button type="submit" class="form__button">
-				Submit
-			</button>
-			<button type="reset" class="form__button">
-				Reset
-			</button>
-		</div>
-		<span>{{error}}</span>
+      {% if request.path == '/news/create'%}
+      <div class="form__name">Add new record</div>
+      {%else%}
+      <div class="form__name">Edit current record</div>
+      {%endif%} 
+		{%csrf_token%} {{form.title}} {{form.announcement}}
+      {{form.fullText}} {{form.date}}
+      <div class="form__buttons">
+        <button type="submit" class="form__button">Submit</button>
+        <button type="reset" class="form__button">Reset</button>
+      </div>
+      <span>{{error}}</span>
     </form>
   </div>
 </div>
