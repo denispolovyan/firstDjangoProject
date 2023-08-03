@@ -4,7 +4,7 @@
   {%if not news%}
   <div class="news__error">You do not have news</div>
   {%endif%}
-  <div class="create"><a href="{%url 'newsCreate'%}">Create news</a></div>
+  <a href="{%url 'newsCreate'%}"> <div class="create">Create news</div></a>
   {%if news%}
   <div class="news">
     {%for el in news%}
@@ -13,9 +13,9 @@
       <div class="news__announcement">{{el.announcement}}</div>
       <div class="news__text">{{el.fullText}}</div>
       <div class="news__date">{{el.date}}</div>
-      <button class="news__button button">
-        <a href="{% url 'newsDetail' el.id%}">Read more</a>
-      </button>
+      <a href="{% url 'newsDetail' el.id%}">
+        <button class="news__button button">Read more</button></a
+      >
     </div>
     {%endfor%}
   </div>

@@ -6,8 +6,8 @@
     <div class="details__date">{{article.date}}</div>
     <div class="fullText">{{article.fullText}}</div>
     <div class="details__buttons">
-      <button class="button details__delete"><a href="{% url 'newsDelete' article.id%}">Delete </a></button>
-      <button class="button details__edit"><a href="{% url 'newsUpdate' article.id%}">Edit </a></button>
+      <a href="{% url 'newsDelete' article.id%}"><button class="button details__delete">Delete</button></a>
+      <a href="{% url 'newsUpdate' article.id%}"><button class="button details__edit">Edit</button></a>
     </div>
   </div>
   </div>

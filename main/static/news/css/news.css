@@ -55,15 +55,14 @@
 	font-weight: 700;
 	text-align: center;
 	background: rgb(216, 172, 172);
+	font-weight: 700;
+	color: #fff;
 }
 .create:hover {
 	background: rgb(189, 147, 147);
 	transition-duration: 0.5s;
 }
-.create a{
-	font-weight: 700;
-	color: #fff;
-}
+
 
 /* form for adding news  */
 
@@ -131,15 +130,14 @@
 	height: 35px;
 	border-radius: 10px;
 	background: rgb(216, 172, 172);
+	color: #fff;
+	font-weight: 700;
 }
 .button:hover{
 	background: rgb(189, 147, 147);
 	transition-duration: 0.5s;
 }
-.button a{
-	color: #fff;
-	font-weight: 700;
-}
+
 
 /* details  */
 .details {

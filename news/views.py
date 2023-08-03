@@ -26,8 +26,7 @@ class NewsDeleteViews(DeleteView):
    context_object_name = 'article'
    
    
-   
-   
+      
 def newsCreate(request):
    error = ''
    
